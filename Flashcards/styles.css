@@ -1,0 +1,131 @@
+/* Updated CSS with gradient angled at 45 degrees */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #8E2DE2, #4A00E0); /* Adjust gradient angle to 45 degrees */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
+}
+
+.flashcard {
+    background: linear-gradient(135deg, #f70776, #680747);
+    border: 1px solid #5D3D68;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 300px;
+    word-wrap: break-word; /* Allow long words to wrap */
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Ensure that long words are broken and wrap onto the next line */
+    text-overflow: ellipsis;
+}
+.flashcard-container {
+    position: relative; /* Ensure flashcards are positioned relative to this container */
+    margin-top: 150px; /* Adjust margin-top to create space below the textarea */
+}
+
+/* Additional styles for buttons */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Updated CSS with styled input textarea */
+input[type="text"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px auto; /* Center the textarea horizontally */
+    display: block; /* Make it a block element */
+    width: 80%; /* Set width */
+    max-width: 500px; /* Set max width */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    resize: vertical;
+    min-height: 100px;
+    position: absolute; /* Position absolutely */
+    top: 20px; /* Distance from top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #999999; /* Light gray placeholder text */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50; /* Green border color when focused */
+}
+
+/* Updated CSS for the "Download Flashcards as PNG" button */
+#print-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(135deg, #4e8cff, #357ae8); /* Blue gradient */
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+#print-button:hover {
+    background-image: linear-gradient(45deg, #357ae8, #2358c3); /* Darker blue gradient on hover */
+}
+
+/* Updated CSS for the "Generate Flashcard" button */
+#generate-button {
+    position: fixed;
+    bottom: 60px; /* Adjust the position to avoid overlapping with the download button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(135deg, #4e8cff, #357ae8); /* Blue gradient */
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+#generate-button:hover {
+    background-image: linear-gradient(45deg, #357ae8, #2358c3); /* Darker blue gradient on hover */
+}
